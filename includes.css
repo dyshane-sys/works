@@ -1,0 +1,334 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for central content */
+#container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    padding-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff; /* White background for content */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Header */
+#header {
+    background-color: #333; /* Dark grey background */
+    text-align: center;
+    padding: 30px;
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0;
+}
+
+#header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Bar */
+#nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #444; /* Dark grey background for navigation */
+    margin: 0;
+}
+
+#nav li {
+    margin: 0 20px;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+}
+
+#nav a:hover {
+    background-color: #666; /* Lighter grey on hover */
+    transform: translateY(-3px);
+}
+
+/* Content Box */
+#content {
+    background-color: #f9f9f9; /* Light grey background for content */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #444; /* Dark grey border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #444; /* Dark grey background */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #333; /* Darker grey on hover */
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #333; /* Dark grey footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+#footer a {
+    color: #80deea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease, transform 0.3s ease;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+/* Table Styling for User Table */
+#user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    background-color: #fff;
+    border: 2px solid #444; /* Dark grey border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+#user-table th,
+#user-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#users-table th {
+    background-color: #444; /* Dark grey header */
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternating Row Colors */
+#users-table tr:nth-child(even) {
+    background-color: #f1f1f1; /* Very light grey for even rows */
+}
+
+#users-table tr:hover {
+    background-color: #ddd; /* Slightly darker grey on hover */
+    transition: background-color 0.3s;
+}
+/* Table Styling for Users Table */
+#users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    background-color: #fff;
+    border: 2px solid #444; /* Dark grey border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Borders for Each Cell */
+#users-table th,
+#users-table td {
+    padding: 12px;
+    border: 1px solid #444; /* Dark border between cells */
+    text-align: left;
+}
+
+/* Table Header */
+#users-table th {
+    background-color: #444; /* Dark grey header */
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternating Row Colors */
+#users-table tr:nth-child(even) {
+    background-color: #f1f1f1; /* Very light grey for even rows */
+}
+
+#users-table tr:hover {
+    background-color: #ddd; /* Slightly darker grey on hover */
+    transition: background-color 0.3s;
+}
+
+/* Footer Row (Summary) */
+#users-table tfoot td {
+    font-weight: bold;
+    background-color: #444; /* Dark grey footer */
+    color: white;
+    text-align: right;
+    padding: 10px;
+    border-top: 2px solid #ddd;
+}
+
+/* Align the Table in the Center */
+#users-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+    
+
+/* Footer Row (Summary) */
+#users-table tfoot td {
+    font-weight: bold;
+    background-color: #444;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    border-top: 2px solid #ddd;
+}
+
+/* Action Links in Table */
+.actions a {
+    text-decoration: none;
+    color: #444; /* Dark grey for action links */
+    font-weight: bold;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#contacts {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacts ul li {
+    margin: 10px 0;
+}
+
+#contacts ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#contacts ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Me Section */
+#about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me Text Box */
+#about-me-box {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about-me-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333; /* Dark text */
+}
+
+#about-me-box p {
+    line-height: 1.6;
+    font-size: 1em;
+    color: #555; /* Lighter text */
+}
+
+/* About Me Image */
+#about-me-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
